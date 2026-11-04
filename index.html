@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Living literature infographic: Semiotics, Narrative Theory, Data Visualization, Data Comics, and Visual Thinking." />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <title>Literature Infographic — Semiotics, Narrative, Data Comics &amp; Visual Thinking</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js" crossorigin="anonymous" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" role="banner">
+    <div class="wrap">
+      <p class="eyebrow">Eric Alvarado · Multisector Communications</p>
+      <h1>Literature Infographic</h1>
+      <p class="lede" id="summary">Buildable visual map of semiotics, narrative, data visualization, data comics, and visual thinking.</p>
+      <aside class="callout callout-info" role="note" aria-label="Living map note">
+        <strong>Living map — updated weekly.</strong>
+        <span id="updated-note">New verified papers append to <code>data/works.json</code> by area and year.</span>
+      </aside>
+      <ul class="metrics" id="metrics" aria-label="Catalog metrics"></ul>
+    </div>
+  </header>
+
+  <nav class="tabs" role="tablist" aria-label="Views" id="tabs">
+    <button role="tab" id="tab-map" aria-controls="panel-map" aria-selected="true" tabindex="0" data-view="map">Infographic</button>
+    <button role="tab" id="tab-areas" aria-controls="panel-areas" aria-selected="false" tabindex="-1" data-view="areas">Area cards</button>
+    <button role="tab" id="tab-comics" aria-controls="panel-comics" aria-selected="false" tabindex="-1" data-view="comics">Data Comics</button>
+    <button role="tab" id="tab-catalog" aria-controls="panel-catalog" aria-selected="false" tabindex="-1" data-view="catalog">Full catalog</button>
+  </nav>
+
+  <main id="main" class="wrap">
+    <section id="panel-map" role="tabpanel" aria-labelledby="tab-map" tabindex="0">
+      <h2>Legend — color by area</h2>
+      <ul class="legend" id="legend" aria-label="Area color legend"></ul>
+      <p class="hint">Diamonds with dashed links mark open research gaps on the Data Comics hub.</p>
+
+      <h2>Field network — hub &amp; spokes</h2>
+      <p>Data Comics sits at the confluence of visualization, narrative, semiotics, and visual thinking. Bridges supply theory and method. Use Area cards for definitions and works.</p>
+      <div class="viz-frame" id="network-wrap">
+        <svg id="network" role="img" aria-labelledby="network-title network-desc"></svg>
+        <p id="network-title" class="visually-hidden">Field network diagram</p>
+        <p id="network-desc" class="visually-hidden">Hub-and-spoke diagram with Data Comics at the center, five core areas, four bridge disciplines, and three open-gap markers connected by dashed lines.</p>
+      </div>
+      <div class="card-grid" id="core-cards" aria-label="Core area summaries"></div>
+
+      <h2>Timeline — landmark works</h2>
+      <p>Selected anchors left→right by year, colored by area. Full set in the catalog tab.</p>
+      <div class="viz-frame" id="timeline-wrap">
+        <svg id="timeline" role="img" aria-labelledby="timeline-title timeline-desc"></svg>
+        <p id="timeline-title" class="visually-hidden">Literature timeline</p>
+        <p id="timeline-desc" class="visually-hidden">Timeline of landmark works from foundational texts through recent 2020–2026 papers, colored by research area.</p>
+      </div>
+
+      <h2>Starting reading path (12)</h2>
+      <ol class="reading-path" id="reading-path"></ol>
+
+      <h2>Gap zones on the map</h2>
+      <div class="card-grid two" id="gap-cards"></div>
+    </section>
+
+    <section id="panel-areas" role="tabpanel" aria-labelledby="tab-areas" hidden tabindex="0">
+      <h2>Expandable area cards</h2>
+      <div class="filters">
+        <label for="focus-select">Focus node
+          <select id="focus-select"></select>
+        </label>
+      </div>
+      <aside class="callout" id="focus-def" role="note"></aside>
+      <p id="focus-count"></p>
+      <div id="focus-works" class="work-list"></div>
+    </section>
+
+    <section id="panel-comics" role="tabpanel" aria-labelledby="tab-comics" hidden tabindex="0">
+      <h2>Data Comics — emphasized hub</h2>
+      <p class="hub-note"><span class="swatch" style="background:#ea580c" aria-hidden="true"></span> Your perception / interpretation / recall studies sit on the cognitive edge of this hub.</p>
+
+      <details open>
+        <summary>Genre &amp; design</summary>
+        <div id="comics-design" class="work-list"></div>
+      </details>
+      <details open>
+        <summary>Empirical: comprehension, engagement, recall, framing</summary>
+        <div id="comics-empirical" class="work-list"></div>
+      </details>
+      <details open>
+        <summary>Comics cognition</summary>
+        <div id="comics-cognition" class="work-list"></div>
+      </details>
+
+      <h2>Where your studies fit — open questions</h2>
+      <div id="open-questions"></div>
+      <p class="hint">Gaps inferred from verified sources only—not claims about unpublished work.</p>
+    </section>
+
+    <section id="panel-catalog" role="tabpanel" aria-labelledby="tab-catalog" hidden tabindex="0">
+      <h2>Full verified catalog</h2>
+      <p id="catalog-intro"></p>
+      <div class="filters">
+        <label for="area-filter">Area
+          <select id="area-filter"></select>
+        </label>
+        <label for="kind-filter">Type
+          <select id="kind-filter">
+            <option value="all">Foundational + recent</option>
+            <option value="foundational">Foundational only</option>
+            <option value="recent">Recent only</option>
+          </select>
+        </label>
+        <label for="search-filter">Search
+          <input id="search-filter" type="search" placeholder="Title, author, venue…" autocomplete="off" />
+        </label>
+      </div>
+      <p id="catalog-count" aria-live="polite"></p>
+      <div id="catalog-list" class="work-list"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer wrap" role="contentinfo">
+    <p id="verification"></p>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,1431 @@
+{
+  "meta": {
+    "title": "Literature Infographic — Semiotics, Narrative, Data Comics & Visual Thinking",
+    "summary": "Buildable visual map of Eric Alvarado's literature—hub network, timeline, reading path, Data Comics gaps, and a filterable catalog updated weekly.",
+    "updatedNote": "Living map — updated weekly. New verified papers append to works.json (by area and year). Only verified DOI/Open Library/publisher links ship.",
+    "verification": "Crossref / OpenAlex / Open Library / publisher / DOI (Nov 2026). Unverified works omitted. Blind-spot diamonds are research questions, not additional papers.",
+    "sources": [
+      "Crossref API (Nov 2026)",
+      "OpenAlex API",
+      "Open Library",
+      "Publisher pages",
+      "DOI resolution"
+    ]
+  },
+  "coreAreas": [
+    "Semiotics",
+    "Narrative Theory",
+    "Data Visualization",
+    "Data Comics",
+    "Visual Thinking"
+  ],
+  "bridgeAreas": [
+    "Linguistics",
+    "Cognitive Psychology",
+    "UI/UX",
+    "Graphic Design"
+  ],
+  "catalogAreas": [
+    "Semiotics",
+    "Narrative Theory",
+    "Data Visualization",
+    "Data Comics",
+    "Visual Thinking",
+    "UI/UX & Design",
+    "Visualization Literacy",
+    "Accessibility"
+  ],
+  "areaMeta": {
+    "Semiotics": {
+      "color": "#7c3aed",
+      "short": "Signs & meaning",
+      "def": "Saussure/Peirce → Barthes → Kress & van Leeuwen."
+    },
+    "Narrative Theory": {
+      "color": "#2563eb",
+      "short": "Storyworlds",
+      "def": "Genette, Bal, Herman, Ryan."
+    },
+    "Data Visualization": {
+      "color": "#0891b2",
+      "short": "Graphical encoding",
+      "def": "Bertin → Cleveland/McGill → Munzner; Segel/Heer; Hullman."
+    },
+    "Data Comics": {
+      "color": "#ea580c",
+      "short": "Sequential data stories",
+      "def": "Bach/Wang + empirics + McCloud/Cohn. Your hub."
+    },
+    "Visual Thinking": {
+      "color": "#16a34a",
+      "short": "Diagrams & reasoning",
+      "def": "Arnheim, Larkin & Simon, Tversky, Engelhardt."
+    },
+    "Linguistics": {
+      "color": "#db2777",
+      "short": "Bridge",
+      "def": "Sign theory and multimodal cohesion."
+    },
+    "Cognitive Psychology": {
+      "color": "#ca8a04",
+      "short": "Bridge",
+      "def": "Perception, memorability, visual narrative ERP."
+    },
+    "UI/UX": {
+      "color": "#64748b",
+      "short": "Bridge",
+      "def": "Affordances and semiotic engineering."
+    },
+    "Graphic Design": {
+      "color": "#dc2626",
+      "short": "Bridge",
+      "def": "Isotype, visual variables, panel craft."
+    },
+    "UI/UX & Design": {
+      "color": "#64748b",
+      "short": "UI/UX + Isotype",
+      "def": "Norman, de Souza, Neurath."
+    },
+    "Visualization Literacy": {
+      "color": "#2563eb",
+      "short": "Reading charts",
+      "def": "Assessments and barrier analyses."
+    },
+    "Accessibility": {
+      "color": "#16a34a",
+      "short": "Inclusive access",
+      "def": "Chartability, VoxLens, Chart Reader."
+    }
+  },
+  "readingOrder": [
+    "segel",
+    "hullman",
+    "bach_emerging",
+    "bach_patterns",
+    "wang2019",
+    "cohn_vns",
+    "mccloud",
+    "bertin",
+    "cleveland",
+    "larkin",
+    "kress",
+    "dignazio"
+  ],
+  "readingShortWhy": {
+    "segel": "Narrative-viz design space",
+    "hullman": "Framing / rhetoric",
+    "bach_emerging": "Define the genre",
+    "bach_patterns": "Design vocabulary",
+    "wang2019": "Efficacy & engagement",
+    "cohn_vns": "Visual narrative grammar",
+    "mccloud": "Comics form theory",
+    "bertin": "Visual variables",
+    "cleveland": "Encoding perception",
+    "larkin": "Diagram leverage",
+    "kress": "Social-semiotic grammar",
+    "dignazio": "Power & situated data"
+  },
+  "timelineIds": [
+    "saussure",
+    "peirce",
+    "neurath",
+    "barthes_elements",
+    "bertin",
+    "arnheim",
+    "tufte",
+    "cleveland",
+    "larkin",
+    "mccloud",
+    "wilkinson",
+    "kress",
+    "segel",
+    "hullman",
+    "cohn_vns",
+    "borkin2013",
+    "bach_emerging",
+    "bach_patterns",
+    "wang2019",
+    "dignazio",
+    "wang_interactive",
+    "fogwill",
+    "he_fm"
+  ],
+  "blindSpots": [
+    {
+      "id": "gap_seq",
+      "title": "Sequential-art cognition",
+      "why": "Underuse of Cohn VLT; operationalize panel roles/layout.",
+      "starters": [
+        "cohn_book",
+        "cohn_vns",
+        "cohn_neural",
+        "cohn_arch"
+      ]
+    },
+    {
+      "id": "gap_recall",
+      "title": "Long-term recall & interpretation",
+      "why": "Wang 2019 + Fogwill 2024 leave longer delays and richer measures open.",
+      "starters": [
+        "wang2019",
+        "fogwill",
+        "borkin2016",
+        "nobre"
+      ]
+    },
+    {
+      "id": "gap_a11y",
+      "title": "Comics accessibility",
+      "why": "Efficacy studies assume sighted panel reading.",
+      "starters": [
+        "elavsky",
+        "zong",
+        "voxlens",
+        "chartreader",
+        "sharif_assets"
+      ]
+    },
+    {
+      "id": "gap_critical",
+      "title": "Critical / affective data studies",
+      "why": "Conventions, emotion, power.",
+      "starters": [
+        "kennedy_feeling",
+        "kennedy_conventions",
+        "dignazio",
+        "drucker",
+        "prantl"
+      ]
+    },
+    {
+      "id": "gap_culture",
+      "title": "Cross-cultural reading",
+      "why": "Conventions are not universal.",
+      "starters": [
+        "tversky1991",
+        "cohn_book",
+        "kress"
+      ]
+    },
+    {
+      "id": "gap_history",
+      "title": "Isotype & journalism",
+      "why": "Easy to skip via CHI/TVCG-only entry.",
+      "starters": [
+        "neurath",
+        "segel",
+        "kennedy_book"
+      ]
+    },
+    {
+      "id": "gap_ai",
+      "title": "AI-generated stories",
+      "why": "Foundation-model narrative viz 2024–2025.",
+      "starters": [
+        "he_fm",
+        "id8",
+        "zhao_stories"
+      ]
+    },
+    {
+      "id": "gap_lit",
+      "title": "Literacy as moderator",
+      "why": "Literacy may moderate perception/recall.",
+      "starters": [
+        "boy_vlat",
+        "firat",
+        "nobre",
+        "hedayati"
+      ]
+    }
+  ],
+  "network": {
+    "nodes": [
+      {
+        "id": "ling",
+        "label": "Linguistics",
+        "detail": "bridge",
+        "role": "bridge",
+        "area": "Linguistics"
+      },
+      {
+        "id": "cog",
+        "label": "Cog. Psych",
+        "detail": "bridge",
+        "role": "bridge",
+        "area": "Cognitive Psychology"
+      },
+      {
+        "id": "ux",
+        "label": "UI/UX",
+        "detail": "bridge",
+        "role": "bridge",
+        "area": "UI/UX"
+      },
+      {
+        "id": "gd",
+        "label": "Graphic Design",
+        "detail": "bridge",
+        "role": "bridge",
+        "area": "Graphic Design"
+      },
+      {
+        "id": "semi",
+        "label": "Semiotics",
+        "detail": "core · signs",
+        "role": "core",
+        "area": "Semiotics"
+      },
+      {
+        "id": "narr",
+        "label": "Narrative",
+        "detail": "core · storyworlds",
+        "role": "core",
+        "area": "Narrative Theory"
+      },
+      {
+        "id": "vt",
+        "label": "Visual Thinking",
+        "detail": "core · diagrams",
+        "role": "core",
+        "area": "Visual Thinking"
+      },
+      {
+        "id": "dv",
+        "label": "Data Viz",
+        "detail": "core · encoding",
+        "role": "core",
+        "area": "Data Visualization"
+      },
+      {
+        "id": "dc",
+        "label": "Data Comics",
+        "detail": "HUB · your focus",
+        "role": "hub",
+        "area": "Data Comics"
+      },
+      {
+        "id": "gap_seq",
+        "label": "Seq. cognition",
+        "detail": "OPEN GAP",
+        "role": "gap"
+      },
+      {
+        "id": "gap_a11y",
+        "label": "Comics a11y",
+        "detail": "OPEN GAP",
+        "role": "gap"
+      },
+      {
+        "id": "gap_recall",
+        "label": "Long recall",
+        "detail": "OPEN GAP",
+        "role": "gap"
+      }
+    ],
+    "edges": [
+      {
+        "from": "ling",
+        "to": "semi",
+        "label": "sign systems"
+      },
+      {
+        "from": "ling",
+        "to": "narr",
+        "label": "discourse"
+      },
+      {
+        "from": "cog",
+        "to": "vt",
+        "label": "perception"
+      },
+      {
+        "from": "cog",
+        "to": "dc",
+        "label": "comprehension"
+      },
+      {
+        "from": "ux",
+        "to": "dv",
+        "label": "interaction"
+      },
+      {
+        "from": "gd",
+        "to": "dv",
+        "label": "layout"
+      },
+      {
+        "from": "gd",
+        "to": "dc",
+        "label": "panel craft"
+      },
+      {
+        "from": "semi",
+        "to": "dv",
+        "label": "visual variables"
+      },
+      {
+        "from": "semi",
+        "to": "dc",
+        "label": "multimodality"
+      },
+      {
+        "from": "narr",
+        "to": "dv",
+        "label": "story genres"
+      },
+      {
+        "from": "narr",
+        "to": "dc",
+        "label": "sequencing"
+      },
+      {
+        "from": "vt",
+        "to": "dv",
+        "label": "external reps"
+      },
+      {
+        "from": "vt",
+        "to": "dc",
+        "label": "closure / layout"
+      },
+      {
+        "from": "dv",
+        "to": "dc",
+        "label": "charts in panels"
+      },
+      {
+        "from": "dc",
+        "to": "gap_seq",
+        "label": "under-theorized",
+        "dashed": true
+      },
+      {
+        "from": "dc",
+        "to": "gap_a11y",
+        "label": "rarely tested",
+        "dashed": true
+      },
+      {
+        "from": "dc",
+        "to": "gap_recall",
+        "label": "open measures",
+        "dashed": true
+      }
+    ]
+  },
+  "comics": {
+    "design": [
+      "bach_emerging",
+      "bach_patterns",
+      "datatoon",
+      "wang_workshops",
+      "wang_interactive",
+      "wang_hci",
+      "wang_cheatsheets",
+      "mccloud"
+    ],
+    "empirical": [
+      "wang2019",
+      "fogwill",
+      "borkin2013",
+      "borkin2016",
+      "kong2018",
+      "kong2019",
+      "cohn_neural",
+      "cohn_vns"
+    ],
+    "cognition": [
+      "cohn_book",
+      "cohn_vns",
+      "cohn_neural",
+      "cohn_arch",
+      "cohn_defense"
+    ],
+    "openQuestions": [
+      {
+        "lead": "Open · long-term recall",
+        "text": "Beyond Wang 2019 (1–4 wks) and Fogwill 2024: longer delays and persistence remain open."
+      },
+      {
+        "lead": "Open · moderators",
+        "text": "Literacy, comics fluency, expertise, cultural visual languages rarely crossed with data-comics stimuli."
+      },
+      {
+        "lead": "Open · interpretation quality",
+        "text": "Framing, causality, affect—not only factual quizzes."
+      },
+      {
+        "lead": "Open · panel / sequence effects",
+        "text": "Manipulate Cohn categories/layout vs monolithic comic format."
+      },
+      {
+        "lead": "Open · accessibility",
+        "text": "Almost no efficacy papers evaluate non-visual reading paths."
+      }
+    ]
+  },
+  "works": [
+    {
+      "id": "saussure",
+      "area": "Semiotics",
+      "kind": "foundational",
+      "authors": "Ferdinand de Saussure",
+      "year": 1916,
+      "title": "Course in General Linguistics (Cours de linguistique générale)",
+      "venue": "Open Library / classic linguistics text",
+      "link": "https://openlibrary.org/works/OL2139804W",
+      "why": "Foundational account of the linguistic sign (signifier/signified) that later visual semiotics remediates."
+    },
+    {
+      "id": "peirce",
+      "area": "Semiotics",
+      "kind": "foundational",
+      "authors": "Charles Sanders Peirce",
+      "year": 1931,
+      "title": "Collected Papers of Charles Sanders Peirce",
+      "venue": "Harvard University Press (Open Library)",
+      "link": "https://openlibrary.org/works/OL1834319W",
+      "why": "Triadic sign model (icon/index/symbol) widely used in visualization and HCI semiotics."
+    },
+    {
+      "id": "barthes_elements",
+      "area": "Semiotics",
+      "kind": "foundational",
+      "authors": "Roland Barthes",
+      "year": 1967,
+      "title": "Elements of Semiology (Éléments de sémiologie)",
+      "venue": "Open Library",
+      "link": "https://openlibrary.org/works/OL1375085W",
+      "why": "Systematizes denotation/connotation and the semiotic study of cultural objects."
+    },
+    {
+      "id": "barthes_image",
+      "area": "Semiotics",
+      "kind": "foundational",
+      "authors": "Roland Barthes",
+      "year": 1977,
+      "title": "Rhetoric of the Image (in Image–Music–Text)",
+      "venue": "Hill and Wang / Open Library",
+      "link": "https://openlibrary.org/works/OL1375081W",
+      "why": "Classic analysis of how images persuade via linguistic and iconic messages."
+    },
+    {
+      "id": "eco",
+      "area": "Semiotics",
+      "kind": "foundational",
+      "authors": "Umberto Eco",
+      "year": 1976,
+      "title": "A Theory of Semiotics",
+      "venue": "Advances in Semiotics / Open Library",
+      "link": "https://openlibrary.org/works/OL14853013W",
+      "why": "Comprehensive theory of codes, signification, and interpretation."
+    },
+    {
+      "id": "kress",
+      "area": "Semiotics",
+      "kind": "foundational",
+      "authors": "Gunther Kress; Theo van Leeuwen",
+      "year": 2006,
+      "title": "Reading Images: The Grammar of Visual Design",
+      "venue": "Routledge",
+      "link": "https://doi.org/10.4324/9780203619728",
+      "citation_count": 3538,
+      "citation_source": "Crossref, Nov 2026",
+      "why": "Social-semiotic grammar of visual composition; a bridge from linguistics to image analysis."
+    },
+    {
+      "id": "liu_ohalloran",
+      "area": "Semiotics",
+      "kind": "foundational",
+      "authors": "Yu Liu; Kay L. O'Halloran",
+      "year": 2009,
+      "title": "Intersemiotic Texture: Analyzing Cohesive Devices between Language and Images",
+      "venue": "Social Semiotics",
+      "link": "https://doi.org/10.1080/10350330903361059",
+      "citation_count": 116,
+      "citation_source": "Crossref, Nov 2026",
+      "why": "Analyzes how text and image cohere—useful for multimodal data stories."
+    },
+    {
+      "id": "serafini",
+      "area": "Semiotics",
+      "kind": "recent",
+      "authors": "Frank Serafini; Stephanie F. Reid",
+      "year": 2023,
+      "title": "Multimodal Content Analysis: Expanding Analytical Approaches to Content Analysis",
+      "venue": "Visual Communication",
+      "link": "https://doi.org/10.1177/1470357219864133",
+      "citation_count": 141,
+      "citation_source": "Crossref, Nov 2026",
+      "why": "Recent methods paper for analyzing multimodal visual–verbal content."
+    },
+    {
+      "id": "genette",
+      "area": "Narrative Theory",
+      "kind": "foundational",
+      "authors": "Gérard Genette",
+      "year": 1979,
+      "title": "Narrative Discourse: An Essay in Method",
+      "venue": "Cornell University Press / Open Library",
+      "link": "https://openlibrary.org/works/OL8222857W",
+      "why": "Narratology classic: order, duration, frequency, mood, voice."
+    },
+    {
+      "id": "bal",
+      "area": "Narrative Theory",
+      "kind": "foundational",
+      "authors": "Mieke Bal",
+      "year": 2009,
+      "title": "Narratology: Introduction to the Theory of Narrative",
+      "venue": "University of Toronto Press / Open Library",
+      "link": "https://openlibrary.org/works/OL21318820W",
+      "why": "Accessible synthesis of fabula/story/text distinctions for cross-media narrative."
+    },
+    {
+      "id": "herman_story",
+      "area": "Narrative Theory",
+      "kind": "foundational",
+      "authors": "David Herman",
+      "year": 2002,
+      "title": "Story Logic: Problems and Possibilities of Narrative",
+      "venue": "University of Nebraska Press / Open Library",
+      "link": "https://openlibrary.org/works/OL3746424W",
+      "why": "Cognitive narratology: how stories cue storyworld construction."
+    },
+    {
+      "id": "herman_basic",
+      "area": "Narrative Theory",
+      "kind": "foundational",
+      "authors": "David Herman",
+      "year": 2009,
+      "title": "Basic Elements of Narrative",
+      "venue": "Wiley-Blackwell",
+      "link": "https://doi.org/10.1002/9781444305920",
+      "citation_count": 499,
+      "citation_source": "Crossref, Nov 2026",
+      "why": "Compact introduction to situatedness, event sequencing, worldmaking, and what-it's-like."
+    },
+    {
+      "id": "ryan",
+      "area": "Narrative Theory",
+      "kind": "foundational",
+      "authors": "Marie-Laure Ryan",
+      "year": 1991,
+      "title": "Possible Worlds, Artificial Intelligence, and Narrative Theory",
+      "venue": "Indiana University Press / Open Library",
+      "link": "https://openlibrary.org/works/OL4616922W",
+      "why": "Possible-worlds approach to fictionality and narrative—useful for interactive data stories."
+    },
+    {
+      "id": "ryan_bell",
+      "area": "Narrative Theory",
+      "kind": "recent",
+      "authors": "Alice Bell; Marie-Laure Ryan (eds.)",
+      "year": 2019,
+      "title": "Possible Worlds Theory and Contemporary Narratology",
+      "venue": "University of Nebraska Press",
+      "link": "https://doi.org/10.2307/j.ctv8xng0c",
+      "citation_count": 32,
+      "citation_source": "Crossref, Nov 2026",
+      "why": "Updates possible-worlds narratology for digital/media contexts."
+    },
+    {
+      "id": "lakoff",
+      "area": "Narrative Theory",
+      "kind": "foundational",
+      "authors": "George Lakoff; Mark Johnson",
+      "year": 2003,
+      "title": "Metaphors We Live By",
+      "venue": "University of Chicago Press",
+      "link": "https://doi.org/10.7208/chicago/9780226470993.001.0001",
+      "citation_count": 4937,
+      "citation_source": "Crossref, Nov 2026",
+      "why": "Conceptual metaphor theory underpinning visual metaphor and data storytelling rhetoric."
+    },
+    {
+      "id": "bertin",
+      "area": "Data Visualization",
+      "kind": "foundational",
+      "authors": "Jacques Bertin",
+      "year": 1967,
+      "title": "Sémiologie graphique (Semiology of Graphics)",
+      "venue": "Open Library (French original); English: Esri Press 2010",
+      "link": "https://openlibrary.org/works/OL4520539W",
+      "why": "Foundational visual variables and graphic semiology for maps, networks, diagrams. English: https://www.esri.com/en-us/esri-press/browse/semiology-of-graphics-diagrams-networks-maps"
+    },
+    {
+      "id": "tufte",
+      "area": "Data Visualization",
+      "kind": "foundational",
+      "authors": "Edward R. Tufte",
+      "year": 1983,
+      "title": "The Visual Display of Quantitative Information",
+      "venue": "Graphics Press / Open Library",
+      "link": "https://openlibrary.org/works/OL2824012W",
+      "why": "Canonical design principles (data-ink, chartjunk, integrity) for statistical graphics."
+    },
+    {
+      "id": "cleveland",
+      "area": "Data Visualization",
+      "kind": "foundational",
+      "authors": "William S. Cleveland; Robert McGill",
+      "year": 1984,
+      "title": "Graphical Perception: Theory, Experimentation, and Application to the Development of Graphical Methods",
+      "venue": "Journal of the American Statistical Association",
+      "link": "https://doi.org/10.1080/01621459.1984.10478080",
+      "citation_count": 1259,
+      "citation_source": "Crossref, Nov 2026",
+      "why": "Empirical ranking of visual encodings by perceptual accuracy."
+    },
+    {
+      "id": "mackinlay",
+      "area": "Data Visualization",
+      "kind": "foundational",
+      "authors": "Jock Mackinlay",
+      "year": 1986,
+      "title": "Automating the Design of Graphical Presentations of Relational Information",
+      "venue": "ACM Transactions on Graphics",
+      "link": "https://doi.org/10.1145/22949.22950",
+      "citation_count": 1115,
+      "citation_source": "Crossref, Nov 2026",
+      "why": "Expressiveness/effectiveness criteria for automated visualization design."
+    },
+    {
+      "id": "wilkinson",
+      "area": "Data Visualization",
+      "kind": "foundational",
+      "authors": "Leland Wilkinson",
+      "year": 1999,
+      "title": "The Grammar of Graphics",
+      "venue": "Springer",
+      "link": "https://doi.org/10.1007/978-1-4757-3100-2",
+      "citation_count": 190,
+      "citation_source": "Crossref, Nov 2026",
+      "why": "Layered grammar that later informs ggplot2, Vega, etc."
+    },
+    {
+      "id": "munzner",
+      "area": "Data Visualization",
+      "kind": "foundational",
+      "authors": "Tamara Munzner",
+      "year": 2014,
+      "title": "Visualization Analysis and Design",
+      "venue": "A K Peters/CRC Press",
+      "link": "https://doi.org/10.1201/b17511",
+      "citation_count": 1205,
+      "citation_source": "Crossref, Nov 2026",
+      "why": "Modern textbook framework: what/why/how, marks & channels, validation."
+    },
+    {
+      "id": "ware",
+      "area": "Data Visualization",
+      "kind": "foundational",
+      "authors": "Colin Ware",
+      "year": 2000,
+      "title": "Information Visualization: Perception for Design",
+      "venue": "Morgan Kaufmann / Open Library",
+      "link": "https://openlibrary.org/works/OL100845W",
+      "why": "Perception science applied to visualization design."
+    },
+    {
+      "id": "heer_bostock",
+      "area": "Data Visualization",
+      "kind": "foundational",
+      "authors": "Jeffrey Heer; Michael Bostock",
+      "year": 2010,
+      "title": "Crowdsourcing Graphical Perception: Using Mechanical Turk to Assess Visualization Design",
+      "venue": "CHI",
+      "link": "https://doi.org/10.1145/1753326.1753357",
+      "citation_count": 583,
+      "citation_source": "Crossref, Nov 2026",
+      "why": "Replicates/extends Cleveland–McGill with crowdsourcing methods."
+    },
+    {
+      "id": "segel",
+      "area": "Data Visualization",
+      "kind": "foundational",
+      "authors": "Edward Segel; Jeffrey Heer",
+      "year": 2010,
+      "title": "Narrative Visualization: Telling Stories with Data",
+      "venue": "IEEE TVCG",
+      "link": "https://doi.org/10.1109/TVCG.2010.179",
+      "citation_count": 1005,
+      "citation_source": "Crossref, Nov 2026",
+      "why": "Defines genres of narrative viz (martini glass, interactive slideshow, etc.)."
+    },
+    {
+      "id": "hullman",
+      "area": "Data Visualization",
+      "kind": "foundational",
+      "authors": "Jessica Hullman; Nicholas Diakopoulos",
+      "year": 2011,
+      "title": "Visualization Rhetoric: Framing Effects in Narrative Visualization",
+      "venue": "IEEE TVCG",
+      "link": "https://doi.org/10.1109/TVCG.2011.255",
+      "citation_count": 412,
+      "citation_source": "Crossref, Nov 2026",
+      "why": "Maps rhetorical techniques and framing effects in data stories."
+    },
+    {
+      "id": "kosara",
+      "area": "Data Visualization",
+      "kind": "foundational",
+      "authors": "Robert Kosara; Jock Mackinlay",
+      "year": 2013,
+      "title": "Storytelling: The Next Step for Visualization",
+      "venue": "Computer",
+      "link": "https://doi.org/10.1109/MC.2013.36",
+      "citation_count": 342,
+      "citation_source": "Crossref, Nov 2026",
+      "why": "Argues for storytelling as a research and practice agenda in viz."
+    },
+    {
+      "id": "borkin2013",
+      "area": "Data Visualization",
+      "kind": "foundational",
+      "authors": "Michelle A. Borkin et al.",
+      "year": 2013,
+      "title": "What Makes a Visualization Memorable?",
+      "venue": "IEEE TVCG",
+      "link": "https://doi.org/10.1109/TVCG.2013.234",
+      "citation_count": 521,
+      "citation_source": "Crossref, Nov 2026",
+      "why": "Empirically links visual distinctiveness to memorability (with caveats for clutter)."
+    },
+    {
+      "id": "borkin2016",
+      "area": "Data Visualization",
+      "kind": "foundational",
+      "authors": "Michelle A. Borkin et al.",
+      "year": 2016,
+      "title": "Beyond Memorability: Visualization Recognition and Recall",
+      "venue": "IEEE TVCG",
+      "link": "https://doi.org/10.1109/TVCG.2015.2467732",
+      "citation_count": 299,
+      "citation_source": "Crossref, Nov 2026",
+      "why": "Separates recognition from content recall; titles and annotations matter."
+    },
+    {
+      "id": "pandey",
+      "area": "Data Visualization",
+      "kind": "foundational",
+      "authors": "Anshul Vikram Pandey et al.",
+      "year": 2015,
+      "title": "How Deceptive are Deceptive Visualizations?",
+      "venue": "CHI",
+      "link": "https://doi.org/10.1145/2702123.2702608",
+      "citation_count": 132,
+      "citation_source": "Crossref, Nov 2026",
+      "why": "Empirical evidence on how common distortion techniques mislead."
+    },
+    {
+      "id": "mckenna",
+      "area": "Data Visualization",
+      "kind": "foundational",
+      "authors": "Sean McKenna; Nathalie Henry Riche; Bongshin Lee; Jeremy Boy; Miriah Meyer",
+      "year": 2017,
+      "title": "Visual Narrative Flow: Exploring Factors Shaping Data Visualization Story Reading Experiences",
+      "venue": "Computer Graphics Forum (EuroVis)",
+      "link": "https://doi.org/10.1111/cgf.13195",
+      "citation_count": 92,
+      "citation_source": "Crossref, Nov 2026",
+      "why": "Factors shaping reading experience in visualization stories."
+    },
+    {
+      "id": "kong2018",
+      "area": "Data Visualization",
+      "kind": "foundational",
+      "authors": "Ha-Kyung Kong; Zhicheng Liu; Karrie Karahalios",
+      "year": 2018,
+      "title": "Frames and Slants in Titles of Visualizations on Controversial Topics",
+      "venue": "CHI",
+      "link": "https://doi.org/10.1145/3173574.3174012",
+      "citation_count": 102,
+      "citation_source": "Crossref, Nov 2026",
+      "why": "Shows how title framing shapes perceived message of the same chart."
+    },
+    {
+      "id": "kong2019",
+      "area": "Data Visualization",
+      "kind": "foundational",
+      "authors": "Ha-Kyung Kong; Zhicheng Liu; Karrie Karahalios",
+      "year": 2019,
+      "title": "Trust and Recall of Information across Varying Degrees of Title-Visualization Misalignment",
+      "venue": "CHI",
+      "link": "https://doi.org/10.1145/3290605.3300576",
+      "citation_count": 83,
+      "citation_source": "Crossref, Nov 2026",
+      "why": "Recall often aligns with title slant even under misalignment; neutrality bias."
+    },
+    {
+      "id": "hullman_uncert",
+      "area": "Data Visualization",
+      "kind": "recent",
+      "authors": "Jessica Hullman",
+      "year": 2020,
+      "title": "Why Authors Don't Visualize Uncertainty",
+      "venue": "IEEE TVCG",
+      "link": "https://doi.org/10.1109/TVCG.2019.2934287",
+      "citation_count": 135,
+      "citation_source": "Crossref, Nov 2026",
+      "why": "Documents barriers to uncertainty visualization—relevant to rhetorical omission."
+    },
+    {
+      "id": "drucker",
+      "area": "Data Visualization",
+      "kind": "foundational",
+      "authors": "Johanna Drucker",
+      "year": 2014,
+      "title": "Graphesis: Visual Forms of Knowledge Production",
+      "venue": "Harvard University Press / Open Library",
+      "link": "https://openlibrary.org/works/OL20002788W",
+      "why": "Humanistic critique of graphical knowledge forms."
+    },
+    {
+      "id": "dignazio",
+      "area": "Data Visualization",
+      "kind": "recent",
+      "authors": "Catherine D'Ignazio; Lauren F. Klein",
+      "year": 2020,
+      "title": "Data Feminism",
+      "venue": "MIT Press",
+      "link": "https://doi.org/10.7551/mitpress/11805.001.0001",
+      "citation_count": 1707,
+      "citation_source": "Crossref, Nov 2026",
+      "why": "Power, equity, and situated knowledge as design principles for data work."
+    },
+    {
+      "id": "kennedy_conventions",
+      "area": "Data Visualization",
+      "kind": "foundational",
+      "authors": "Helen Kennedy; Rosemary Lucy Hill; Giorgia Aiello; William Allen",
+      "year": 2016,
+      "title": "The Work that Visualisation Conventions Do",
+      "venue": "Information, Communication & Society",
+      "link": "https://doi.org/10.1080/1369118X.2016.1153126",
+      "citation_count": 203,
+      "citation_source": "Crossref, Nov 2026",
+      "why": "Shows how viz conventions naturalize particular social meanings."
+    },
+    {
+      "id": "kennedy_feeling",
+      "area": "Data Visualization",
+      "kind": "foundational",
+      "authors": "Helen Kennedy; Rosemary Lucy Hill",
+      "year": 2018,
+      "title": "The Feeling of Numbers: Emotions in Everyday Engagements with Data and Their Visualisation",
+      "venue": "Sociology",
+      "link": "https://doi.org/10.1177/0038038516674675",
+      "citation_count": 212,
+      "citation_source": "Crossref, Nov 2026",
+      "why": "Centers affect/emotion in everyday data engagements."
+    },
+    {
+      "id": "kennedy_book",
+      "area": "Data Visualization",
+      "kind": "recent",
+      "authors": "Martin Engebretsen; Helen Kennedy (eds.)",
+      "year": 2020,
+      "title": "Data Visualization in Society",
+      "venue": "Amsterdam University Press",
+      "link": "https://doi.org/10.1515/9789048543137",
+      "citation_count": 23,
+      "citation_source": "Crossref, Nov 2026",
+      "why": "Edited volume on social meanings and uses of visualization."
+    },
+    {
+      "id": "zhao_stories",
+      "area": "Data Visualization",
+      "kind": "recent",
+      "authors": "Zhenpeng Zhao; Niklas Elmqvist",
+      "year": 2023,
+      "title": "The Stories We Tell About Data: Surveying Data-Driven Storytelling Using Visualization",
+      "venue": "IEEE Computer Graphics and Applications",
+      "link": "https://doi.org/10.1109/MCG.2023.3269850",
+      "citation_count": 26,
+      "citation_source": "Crossref, Nov 2026",
+      "why": "Media-type taxonomy for data-driven storytelling, including comics."
+    },
+    {
+      "id": "he_fm",
+      "area": "Data Visualization",
+      "kind": "recent",
+      "authors": "Yi He; Ke Xu; Shixiong Cao; Yang Shi; Qing Chen; Nan Cao",
+      "year": 2025,
+      "title": "Leveraging Foundation Models for Crafting Narrative Visualization: A Survey",
+      "venue": "IEEE TVCG",
+      "link": "https://doi.org/10.1109/TVCG.2025.3542504",
+      "citation_count": 18,
+      "citation_source": "Crossref, Nov 2026",
+      "why": "Survey of LLM/foundation-model approaches to narrative visualization."
+    },
+    {
+      "id": "id8",
+      "area": "Data Visualization",
+      "kind": "recent",
+      "authors": "Victor Nikhil Antony; Chien-Ming Huang",
+      "year": 2024,
+      "title": "ID.8: Co-Creating Visual Stories with Generative AI",
+      "venue": "ACM TiiS",
+      "link": "https://doi.org/10.1145/3672277",
+      "citation_count": 72,
+      "citation_source": "Crossref, Nov 2026",
+      "why": "System/study of co-creating visual stories with generative AI."
+    },
+    {
+      "id": "prantl",
+      "area": "Data Visualization",
+      "kind": "recent",
+      "authors": "Verena Ingrid Prantl; Torsten Möller; Laura Koesten",
+      "year": 2025,
+      "title": "Untangling Rhetoric, Pathos, and Aesthetics in Data Visualization",
+      "venue": "IEEE TVCG",
+      "link": "https://doi.org/10.1109/TVCG.2025.3628181",
+      "citation_count": 12,
+      "citation_source": "OpenAlex, Nov 2026",
+      "why": "Recent work disentangling rhetorical, emotional, and aesthetic dimensions of viz."
+    },
+    {
+      "id": "bach_emerging",
+      "area": "Data Comics",
+      "kind": "foundational",
+      "authors": "Benjamin Bach; Nathalie Henry Riche; Sheelagh Carpendale; Hanspeter Pfister",
+      "year": 2017,
+      "title": "The Emerging Genre of Data Comics",
+      "venue": "IEEE Computer Graphics and Applications",
+      "link": "https://doi.org/10.1109/MCG.2017.33",
+      "citation_count": 89,
+      "citation_source": "Crossref, Nov 2026",
+      "why": "Defines data comics as a genre combining sequential narrative and visualization."
+    },
+    {
+      "id": "bach_patterns",
+      "area": "Data Comics",
+      "kind": "foundational",
+      "authors": "Benjamin Bach; Zezhong Wang; Matteo Farinella; Dave Murray-Rust; Nathalie Henry Riche",
+      "year": 2018,
+      "title": "Design Patterns for Data Comics",
+      "venue": "CHI",
+      "link": "https://doi.org/10.1145/3173574.3173612",
+      "citation_count": 138,
+      "citation_source": "Crossref, Nov 2026",
+      "why": "Catalog of reusable narrative/layout patterns for data comics."
+    },
+    {
+      "id": "wang2019",
+      "area": "Data Comics",
+      "kind": "foundational",
+      "authors": "Zezhong Wang; Shunming Wang; Matteo Farinella; Dave Murray-Rust; Nathalie Henry Riche; Benjamin Bach",
+      "year": 2019,
+      "title": "Comparing Effectiveness and Engagement of Data Comics and Infographics",
+      "venue": "CHI",
+      "link": "https://doi.org/10.1145/3290605.3300483",
+      "citation_count": 73,
+      "citation_source": "Crossref, Nov 2026",
+      "why": "Key empirical comparison: comics improved understanding/engagement vs infographics and illustrated text; delayed recall still favored comics on average."
+    },
+    {
+      "id": "wang_workshops",
+      "area": "Data Comics",
+      "kind": "foundational",
+      "authors": "Zezhong Wang; Harvey Dingwall; Benjamin Bach",
+      "year": 2019,
+      "title": "Teaching Data Visualization and Storytelling with Data Comic Workshops",
+      "venue": "CHI EA",
+      "link": "https://doi.org/10.1145/3290607.3299043",
+      "citation_count": 34,
+      "citation_source": "Crossref, Nov 2026",
+      "why": "Workshop method for teaching viz storytelling via comics."
+    },
+    {
+      "id": "datatoon",
+      "area": "Data Comics",
+      "kind": "foundational",
+      "authors": "Nam Wook Kim; Nathalie Henry Riche; Benjamin Bach; Guanpeng Xu; Matthew Brehmer; Ken Hinckley et al.",
+      "year": 2019,
+      "title": "DataToon: Drawing Dynamic Network Comics with Pen + Touch Interaction",
+      "venue": "CHI",
+      "link": "https://doi.org/10.1145/3290605.3300335",
+      "citation_count": 64,
+      "citation_source": "Crossref, Nov 2026",
+      "why": "Authoring tool for dynamic network data comics."
+    },
+    {
+      "id": "wang_cheatsheets",
+      "area": "Data Comics",
+      "kind": "recent",
+      "authors": "Zezhong Wang; Lovisa Sundin; Dave Murray-Rust; Benjamin Bach",
+      "year": 2020,
+      "title": "Cheat Sheets for Data Visualization Techniques",
+      "venue": "CHI",
+      "link": "https://doi.org/10.1145/3313831.3376271",
+      "citation_count": 57,
+      "citation_source": "Crossref, Nov 2026",
+      "why": "Comic-style cheat sheets supporting learning of viz techniques."
+    },
+    {
+      "id": "wang_hci",
+      "area": "Data Comics",
+      "kind": "recent",
+      "authors": "Zezhong Wang; Jacob Ritchie; Jingtao Zhou; Fanny Chevalier; Benjamin Bach",
+      "year": 2021,
+      "title": "Data Comics for Reporting Controlled User Studies in Human-Computer Interaction",
+      "venue": "IEEE TVCG",
+      "link": "https://doi.org/10.1109/TVCG.2020.3030433",
+      "citation_count": 32,
+      "citation_source": "Crossref, Nov 2026",
+      "why": "Applies data comics to scientific reporting of HCI studies."
+    },
+    {
+      "id": "wang_interactive",
+      "area": "Data Comics",
+      "kind": "recent",
+      "authors": "Zezhong Wang; Hugo Romat; Fanny Chevalier; Nathalie Henry Riche; Dave Murray-Rust; Benjamin Bach",
+      "year": 2022,
+      "title": "Interactive Data Comics",
+      "venue": "IEEE TVCG",
+      "link": "https://doi.org/10.1109/TVCG.2021.3114849",
+      "citation_count": 40,
+      "citation_source": "Crossref, Nov 2026",
+      "why": "Design space and COMICSCRIPT for branching/interactive data comics."
+    },
+    {
+      "id": "fogwill",
+      "area": "Data Comics",
+      "kind": "recent",
+      "authors": "Melissa Fogwill; Areti Manataki",
+      "year": 2024,
+      "title": "Interactive Data Comics for Communicating Medical Data to the General Public: A Study of Engagement and Ease of Understanding",
+      "venue": "Computers & Graphics",
+      "link": "https://doi.org/10.1016/j.cag.2024.104055",
+      "citation_count": 5,
+      "citation_source": "Crossref, Nov 2026",
+      "why": "Between-group study (n=98): medical data comics more engaging and better recalled/understood than text."
+    },
+    {
+      "id": "mccloud",
+      "area": "Data Comics",
+      "kind": "foundational",
+      "authors": "Scott McCloud",
+      "year": 1993,
+      "title": "Understanding Comics: The Invisible Art",
+      "venue": "Kitchen Sink / HarperCollins / Open Library",
+      "link": "https://openlibrary.org/works/OL276032W",
+      "why": "Seminal practitioner theory of comics: closure, panel transitions, temporal mapping."
+    },
+    {
+      "id": "cohn_book",
+      "area": "Data Comics",
+      "kind": "foundational",
+      "authors": "Neil Cohn",
+      "year": 2013,
+      "title": "The Visual Language of Comics: Introduction to the Structure and Cognition of Sequential Images",
+      "venue": "Bloomsbury Academic",
+      "link": "https://www.bloomsbury.com/us/visual-language-of-comics-9781441181459/",
+      "why": "Visual Language Theory: lexicon + narrative grammar for sequential images."
+    },
+    {
+      "id": "cohn_vns",
+      "area": "Data Comics",
+      "kind": "foundational",
+      "authors": "Neil Cohn",
+      "year": 2013,
+      "title": "Visual Narrative Structure",
+      "venue": "Cognitive Science",
+      "link": "https://doi.org/10.1111/cogs.12016",
+      "citation_count": 203,
+      "citation_source": "Crossref, Nov 2026",
+      "why": "Formal narrative grammar for sequential images (Establisher/Initial/Peak/Release)."
+    },
+    {
+      "id": "cohn_neural",
+      "area": "Data Comics",
+      "kind": "foundational",
+      "authors": "Neil Cohn; Ray Jackendoff; Phillip J. Holcomb; Gina R. Kuperberg",
+      "year": 2014,
+      "title": "The Grammar of Visual Narrative: Neural Evidence for Constituent Structure in Sequential Image Comprehension",
+      "venue": "Neuropsychologia",
+      "link": "https://doi.org/10.1016/j.neuropsychologia.2014.09.018",
+      "citation_count": 72,
+      "citation_source": "Crossref, Nov 2026",
+      "why": "ERP evidence that disrupted narrative constituents elicit language-like neural responses."
+    },
+    {
+      "id": "cohn_arch",
+      "area": "Data Comics",
+      "kind": "foundational",
+      "authors": "Neil Cohn",
+      "year": 2014,
+      "title": "The Architecture of Visual Narrative Comprehension: The Interaction of Narrative Structure and Page Layout in Understanding Comics",
+      "venue": "Frontiers in Psychology",
+      "link": "https://doi.org/10.3389/fpsyg.2014.00680",
+      "citation_count": 42,
+      "citation_source": "Crossref, Nov 2026",
+      "why": "How narrative grammar interacts with external compositional structure (layout)."
+    },
+    {
+      "id": "cohn_defense",
+      "area": "Data Comics",
+      "kind": "foundational",
+      "authors": "Neil Cohn",
+      "year": 2018,
+      "title": "In Defense of a \"Grammar\" in the Visual Language of Comics",
+      "venue": "Journal of Pragmatics",
+      "link": "https://doi.org/10.1016/j.pragma.2018.01.002",
+      "citation_count": 22,
+      "citation_source": "Crossref, Nov 2026",
+      "why": "Defends Visual Language Theory against discourse-only critiques; reviews empirical standards."
+    },
+    {
+      "id": "arnheim",
+      "area": "Visual Thinking",
+      "kind": "foundational",
+      "authors": "Rudolf Arnheim",
+      "year": 1969,
+      "title": "Visual Thinking",
+      "venue": "University of California Press / Open Library",
+      "link": "https://openlibrary.org/works/OL980212W",
+      "why": "Argues perception itself is cognitive—foundational for visual thinking research."
+    },
+    {
+      "id": "larkin",
+      "area": "Visual Thinking",
+      "kind": "foundational",
+      "authors": "Jill H. Larkin; Herbert A. Simon",
+      "year": 1987,
+      "title": "Why a Diagram Is (Sometimes) Worth Ten Thousand Words",
+      "venue": "Cognitive Science",
+      "link": "https://doi.org/10.1016/S0364-0213(87)80026-5",
+      "citation_count": 2351,
+      "citation_source": "Crossref, Nov 2026",
+      "why": "Computational account of when diagrams reduce search vs sentential reps."
+    },
+    {
+      "id": "scaife",
+      "area": "Visual Thinking",
+      "kind": "foundational",
+      "authors": "Mike Scaife; Yvonne Rogers",
+      "year": 1996,
+      "title": "External Cognition: How Do Graphical Representations Work?",
+      "venue": "International Journal of Human-Computer Studies",
+      "link": "https://doi.org/10.1006/ijhc.1996.0048",
+      "citation_count": 686,
+      "citation_source": "Crossref, Nov 2026",
+      "why": "External cognition framework for graphical representations in HCI."
+    },
+    {
+      "id": "tversky2011",
+      "area": "Visual Thinking",
+      "kind": "foundational",
+      "authors": "Barbara Tversky",
+      "year": 2011,
+      "title": "Visualizing Thought",
+      "venue": "Topics in Cognitive Science",
+      "link": "https://doi.org/10.1111/j.1756-8765.2010.01113.x",
+      "citation_count": 283,
+      "citation_source": "Crossref, Nov 2026",
+      "why": "Principles of how spatial marks and layouts express thought."
+    },
+    {
+      "id": "tversky1991",
+      "area": "Visual Thinking",
+      "kind": "foundational",
+      "authors": "Barbara Tversky; Sol Kugelmass; Atalia Winter",
+      "year": 1991,
+      "title": "Cross-cultural and Developmental Trends in Graphic Productions",
+      "venue": "Cognitive Psychology",
+      "link": "https://doi.org/10.1016/0010-0285(91)90005-9",
+      "citation_count": 367,
+      "citation_source": "Crossref, Nov 2026",
+      "why": "Cross-cultural regularities/differences in graphic production—blind-spot relevant."
+    },
+    {
+      "id": "tversky2000",
+      "area": "Visual Thinking",
+      "kind": "foundational",
+      "authors": "Barbara Tversky; Jeff Zacks; Paul Lee; Julie Heiser",
+      "year": 2000,
+      "title": "Lines, Blobs, Crosses and Arrows: Diagrammatic Communication with Schematic Figures",
+      "venue": "Lecture Notes in Computer Science",
+      "link": "https://doi.org/10.1007/3-540-44590-0_21",
+      "citation_count": 78,
+      "citation_source": "Crossref, Nov 2026",
+      "why": "How schematic marks carry meaning in diagrams."
+    },
+    {
+      "id": "engelhardt",
+      "area": "Visual Thinking",
+      "kind": "foundational",
+      "authors": "Yuri Engelhardt",
+      "year": 2002,
+      "title": "The Language of Graphics: A Framework for the Analysis of Syntax and Meaning in Maps, Charts and Diagrams",
+      "venue": "ILLC Dissertation, University of Amsterdam",
+      "link": "https://eprints.illc.uva.nl/id/eprint/2032/",
+      "why": "Syntax/semantics framework for graphics as a visual language."
+    },
+    {
+      "id": "norman",
+      "area": "UI/UX & Design",
+      "kind": "foundational",
+      "authors": "Donald A. Norman",
+      "year": 1988,
+      "title": "The Psychology of Everyday Things (later: The Design of Everyday Things)",
+      "venue": "Basic Books / Open Library",
+      "link": "https://openlibrary.org/works/OL1879162W",
+      "why": "Affordances, signifiers, feedback—semiotic engineering for everyday interaction."
+    },
+    {
+      "id": "desouza",
+      "area": "UI/UX & Design",
+      "kind": "foundational",
+      "authors": "Clarisse Sieckenius de Souza",
+      "year": 2005,
+      "title": "The Semiotic Engineering of Human-Computer Interaction",
+      "venue": "MIT Press / Open Library",
+      "link": "https://openlibrary.org/works/OL16928205W",
+      "why": "HCI as designer–user metacommunication through the interface."
+    },
+    {
+      "id": "neurath",
+      "area": "UI/UX & Design",
+      "kind": "foundational",
+      "authors": "Otto Neurath",
+      "year": 1936,
+      "title": "International Picture Language: The First Rules of Isotype",
+      "venue": "Open Library",
+      "link": "https://openlibrary.org/works/OL1207917W",
+      "why": "Historical root of pictographic statistical communication (Isotype)."
+    },
+    {
+      "id": "boy_vlat",
+      "area": "Visualization Literacy",
+      "kind": "foundational",
+      "authors": "Jeremy Boy; Ronald A. Rensink; Enrico Bertini; Jean-Daniel Fekete",
+      "year": 2014,
+      "title": "A Principled Way of Assessing Visualization Literacy",
+      "venue": "IEEE TVCG",
+      "link": "https://doi.org/10.1109/TVCG.2014.2346984",
+      "citation_count": 231,
+      "citation_source": "Crossref, Nov 2026",
+      "why": "Early principled assessment of visualization literacy."
+    },
+    {
+      "id": "alper",
+      "area": "Visualization Literacy",
+      "kind": "foundational",
+      "authors": "Basak Alper; Nathalie Henry Riche; Fanny Chevalier; Jeremy Boy; Metin Sezgin",
+      "year": 2017,
+      "title": "Visualization Literacy at Elementary School",
+      "venue": "CHI",
+      "link": "https://doi.org/10.1145/3025453.3025877",
+      "citation_count": 109,
+      "citation_source": "Crossref, Nov 2026",
+      "why": "Children's viz literacy and teaching materials."
+    },
+    {
+      "id": "firat",
+      "area": "Visualization Literacy",
+      "kind": "recent",
+      "authors": "Elif E. Firat; Alark Joshi; Robert S. Laramee",
+      "year": 2022,
+      "title": "Interactive Visualization Literacy: The State-of-the-Art",
+      "venue": "Information Visualization",
+      "link": "https://doi.org/10.1177/14738716221081831",
+      "citation_count": 66,
+      "citation_source": "Crossref, Nov 2026",
+      "why": "Survey of interactive visualization literacy research."
+    },
+    {
+      "id": "nobre",
+      "area": "Visualization Literacy",
+      "kind": "recent",
+      "authors": "Carolina Nobre; Kehang Zhu; Eric Mörth; Hanspeter Pfister; Johanna Beyer",
+      "year": 2024,
+      "title": "Reading Between the Pixels: Investigating the Barriers to Visualization Literacy",
+      "venue": "CHI",
+      "link": "https://doi.org/10.1145/3613904.3642760",
+      "citation_count": 23,
+      "citation_source": "Crossref, Nov 2026",
+      "why": "Classifies translation/encoding/decoding barriers beyond test scores."
+    },
+    {
+      "id": "hedayati",
+      "area": "Visualization Literacy",
+      "kind": "recent",
+      "authors": "Maryam Hedayati; Matthew Kay",
+      "year": 2025,
+      "title": "What University Students Learn in Visualization Classes",
+      "venue": "IEEE TVCG",
+      "link": "https://doi.org/10.1109/TVCG.2024.3456291",
+      "citation_count": 12,
+      "citation_source": "Crossref, Nov 2026",
+      "why": "Qualitative gains in design empathy/deconstruction vs standardized VL tests."
+    },
+    {
+      "id": "elavsky",
+      "area": "Accessibility",
+      "kind": "recent",
+      "authors": "Frank Elavsky; Cynthia Bennett; Dominik Moritz",
+      "year": 2022,
+      "title": "How Accessible Is My Visualization? Evaluating Visualization Accessibility with Chartability",
+      "venue": "Computer Graphics Forum",
+      "link": "https://doi.org/10.1111/cgf.14522",
+      "citation_count": 71,
+      "citation_source": "Crossref, Nov 2026",
+      "why": "Heuristic audit method for visualization accessibility."
+    },
+    {
+      "id": "zong",
+      "area": "Accessibility",
+      "kind": "recent",
+      "authors": "Jonathan Zong; Crystal Lee; Alan Lundgard; JiWoong Jang; Daniel Hajas; Arvind Satyanarayan",
+      "year": 2022,
+      "title": "Rich Screen Reader Experiences for Accessible Data Visualization",
+      "venue": "Computer Graphics Forum",
+      "link": "https://doi.org/10.1111/cgf.14519",
+      "citation_count": 93,
+      "citation_source": "Crossref, Nov 2026",
+      "why": "Designs richer SR experiences beyond alt text."
+    },
+    {
+      "id": "voxlens",
+      "area": "Accessibility",
+      "kind": "recent",
+      "authors": "Ather Sharif; Olivia H. Wang; Alida T. Muongchan; Katharina Reinecke; Jacob O. Wobbrock",
+      "year": 2022,
+      "title": "VoxLens: Making Online Data Visualizations Accessible with an Interactive JavaScript Plug-In",
+      "venue": "CHI",
+      "link": "https://doi.org/10.1145/3491102.3517431",
+      "citation_count": 93,
+      "citation_source": "Crossref, Nov 2026",
+      "why": "Interactive accessible viz plugin (summary, sonification, voice)."
+    },
+    {
+      "id": "chartreader",
+      "area": "Accessibility",
+      "kind": "recent",
+      "authors": "John R. Thompson; Jesse J. Martinez; Alper Sarikaya; Edward Cutrell; Bongshin Lee",
+      "year": 2023,
+      "title": "Chart Reader: Accessible Visualization Experiences Designed with Screen Reader Users",
+      "venue": "CHI",
+      "link": "https://doi.org/10.1145/3544548.3581186",
+      "citation_count": 50,
+      "citation_source": "Crossref, Nov 2026",
+      "why": "Co-designed accessible visualization experiences with SR users."
+    },
+    {
+      "id": "sharif_assets",
+      "area": "Accessibility",
+      "kind": "recent",
+      "authors": "Ather Sharif; Sanjana Shivani Chintalapati; Jacob O. Wobbrock; Katharina Reinecke",
+      "year": 2021,
+      "title": "Understanding Screen-Reader Users' Experiences with Online Data Visualizations",
+      "venue": "ASSETS",
+      "link": "https://doi.org/10.1145/3441852.3471202",
+      "citation_count": 83,
+      "citation_source": "Crossref, Nov 2026",
+      "why": "Documents accuracy/time gaps for SR users extracting viz information."
+    }
+  ]
+}
