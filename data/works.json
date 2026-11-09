@@ -1426,6 +1426,83 @@
       "citation_count": 83,
       "citation_source": "Crossref, Nov 2026",
       "why": "Documents accuracy/time gaps for SR users extracting viz information."
+    },
+    {
+      "id": "sajadi_infographics",
+      "area": "Visual Thinking",
+      "kind": "recent",
+      "authors": "Atiyeh Sadat Sajadi; Ashkan Karimi; Vahid Rahmani; Zohreh Khoshgoftar",
+      "year": 2026,
+      "title": "Learner-Created Infographics as a Visual Active Learning Strategy: Knowledge Scores and Retention Among Undergraduate Anesthesia Students",
+      "venue": "Advances in Medical Education and Practice",
+      "link": "https://doi.org/10.2147/AMEP.S648941",
+      "why": "Recent (Nov 2026). Quasi-experiment (n=70) comparing infographic creation vs note-taking on knowledge and retention. Bears on your data comics recall research: a visual-format vs text retention comparison with delayed testing."
+    },
+    {
+      "id": "alenizi_infographic",
+      "area": "Visualization Literacy",
+      "kind": "recent",
+      "authors": "Abdulaziz Alenizi; Ahmad Alfailakawi",
+      "year": 2026,
+      "title": "Visual Literacy among Students and Its Relationship with Interpreting Infographics and Decision-Making within a Learning Management System",
+      "venue": "Frontiers in Education",
+      "link": "https://doi.org/10.3389/feduc.2026.1943596",
+      "why": "Recent (Nov 2026). Links students' visual literacy to how they interpret infographics and make decisions. Bears on your data comics interpretation research: literacy as a moderator of interpretation."
+    },
+    {
+      "id": "liao_pathographies",
+      "area": "Data Comics",
+      "kind": "recent",
+      "authors": "Hung-Chang Liao; Ya-Huei Wang",
+      "year": 2026,
+      "title": "Using Graphic Pathographies as Moral Dilemma Scenarios in Medical Humanities Education: Effects on Moral Distress, Need for Cognition, and Medical Mistrust",
+      "venue": "Frontiers in Psychology",
+      "link": "https://doi.org/10.3389/fpsyg.2026.1963269",
+      "why": "Recent (Nov 2026). Tests comics (graphic medicine) as learning scenarios with measured cognitive and affective outcomes. Related to your data comics work: an empirical comics-format effect study outside visualization."
+    },
+    {
+      "id": "aydin_covilt",
+      "area": "Visualization Literacy",
+      "kind": "recent",
+      "authors": "Furkan Aydin; Seyfullah Gokoglu; Fatma Rumeysa Ucar",
+      "year": 2026,
+      "title": "Operationalizing Visualization Literacy through Bloom's Cognitive Levels and Visualization Task Typologies: CoViLT",
+      "venue": "International Journal of Data Science and Analytics",
+      "link": "https://doi.org/10.1007/s41060-026-01356-7",
+      "why": "Recent (Nov 2026). New visualization literacy test built on Bloom's levels and task typologies; a candidate literacy measure for comprehension studies."
+    },
+    {
+      "id": "lieb_pickhardt",
+      "area": "Visualization Literacy",
+      "kind": "recent",
+      "authors": "Christiane Lieb; Carola Pickhardt",
+      "year": 2026,
+      "title": "Visual Literacy in the Context of Data Literacy in Higher Education: A Systematic Review of Competencies, Empirical Findings and Assessment Approaches",
+      "venue": "Journal of Research in Education and Pedagogy",
+      "link": "https://doi.org/10.70232/jrep.v3i4.237",
+      "why": "Recent (Nov 2026). Systematic review of visual and data visualization literacy competencies and how they are assessed in higher education."
+    },
+    {
+      "id": "wiemann_independence",
+      "area": "Visualization Literacy",
+      "kind": "recent",
+      "authors": "Leon Wiemann; Karin Binder; Michael Rößner",
+      "year": 2026,
+      "title": "Students' Use of Definitions of Independence across Different Visualizations",
+      "venue": "Statistics Education Research Journal",
+      "link": "https://doi.org/10.52041/serj.986",
+      "why": "Recent (Nov 2026). Study of 319 secondary students on whether different visualizations make joint- vs conditional-probability definitions of independence more or less transparent."
+    },
+    {
+      "id": "garro_uncertainty",
+      "area": "Data Visualization",
+      "kind": "recent",
+      "authors": "Carmen Garro; Annemarie Wisbar; Benjamin Possin; Christoph Kinkeldey",
+      "year": 2026,
+      "title": "How Data Journalists Visualize Uncertainty: Editorial Constraints and Design Heuristics in Newsroom Practice",
+      "venue": "arXiv preprint arXiv:2611.03018",
+      "link": "https://arxiv.org/abs/2611.03018",
+      "why": "Recent (Nov 2026). Workshop with 11 newsroom data journalists on why uncertainty is simplified or omitted; extends Hullman's work on the rhetoric of omission in data stories."
     }
   ]
 }
