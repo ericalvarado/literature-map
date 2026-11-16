@@ -1503,6 +1503,61 @@
       "venue": "arXiv preprint arXiv:2611.03018",
       "link": "https://arxiv.org/abs/2611.03018",
       "why": "Recent (Nov 2026). Workshop with 11 newsroom data journalists on why uncertainty is simplified or omitted; extends Hullman's work on the rhetoric of omission in data stories."
+    },
+    {
+      "id": "dhawka_influencers",
+      "area": "Data Visualization",
+      "kind": "recent",
+      "authors": "Priya Dhawka; Nina Lutz",
+      "year": 2026,
+      "title": "Data Visualization Influencers: Tracing the Creation and Curation Strategies Behind Propagandist Visualizations on X",
+      "venue": "arXiv preprint arXiv:2611.15042",
+      "link": "https://arxiv.org/abs/2611.15042",
+      "why": "Recent (Nov 2026). Exploratory study of 17 creators who design and share propagandist visualizations of political narratives on X; extends visualization-as-propaganda and the rhetoric of editorial design and data choices."
+    },
+    {
+      "id": "harriman_ender",
+      "area": "Visual Thinking",
+      "kind": "recent",
+      "authors": "Hwei-Shin Harriman; Yuchen Jin; Dominik Moritz; Joshua Sunshine",
+      "year": 2026,
+      "title": "Ender: Visual Scaffolding for Geometric Proof Comprehension",
+      "venue": "arXiv preprint arXiv:2611.13368",
+      "link": "https://arxiv.org/abs/2611.13368",
+      "why": "Recent (Nov 2026). Interactive rendering system that visualizes the logical status of two-column proofs to ease the working-memory load of integrating diagrams with text; relevant to diagram-text integration and comprehension (indirectly to data comics' image-text pairing)."
+    },
+    {
+      "id": "gorska_verbovisual",
+      "area": "Semiotics",
+      "kind": "recent",
+      "authors": "Elżbieta Górska",
+      "year": 2026,
+      "title": "Dynamic activation of metaphor and metonymy in static verbo-visuals",
+      "venue": "Cognitive Semiotics",
+      "link": "https://doi.org/10.1515/cogsem-2026-3006",
+      "why": "Recent (Nov 2026). Cognitive-linguistic analysis of how metaphor and metonymy interact to build meaning in static verbo-visual (multimodal) discourse, guided by embodied image schemas; a semiotic lens applicable to word-image panels."
+    },
+    {
+      "id": "braten_graphical",
+      "area": "Visualization Literacy",
+      "kind": "recent",
+      "authors": "Ivar Bråten; Helge I. Strømsø; Ymkje E. Haverkamp",
+      "year": 2026,
+      "title": "Examining the Roles of Thinking Dispositions and Epistemic Cognition in Critical Reading of Textual and Graphical Information",
+      "venue": "Thinking Skills and Creativity",
+      "link": "https://doi.org/10.1016/j.tsc.2026.102423",
+      "why": "Recent (Nov 2026). Reading-comprehension researchers examine how thinking dispositions and epistemic cognition relate to critically reading textual versus graphical information; a cognitive-psychology angle on graph literacy."
+    },
+    {
+      "id": "bender_salazar_vt",
+      "area": "Visual Thinking",
+      "kind": "recent",
+      "authors": "Rahmin Bender-Salazar; Sinead Duane; Christian Roth; Breanne Pitt",
+      "year": 2026,
+      "title": "Visual Thinking in Complex Systems for Digital Storytelling, Learning, and Design for Wicked Problems",
+      "venue": "2026 30th International Conference Information Visualisation (IV), IEEE",
+      "link": "https://doi.org/10.23919/ivcps00113.2026.00052",
+      "why": "Recent (newly indexed Nov 2026). Positions visual thinking as a method for digital storytelling, learning, and design around complex 'wicked' problems; links visual thinking to narrative communication."
     }
   ]
 }
