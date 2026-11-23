@@ -423,7 +423,8 @@
       "wang_interactive",
       "wang_hci",
       "wang_cheatsheets",
-      "mccloud"
+      "mccloud",
+      "davis_comic_stories"
     ],
     "empirical": [
       "wang2019",
@@ -433,7 +434,8 @@
       "kong2018",
       "kong2019",
       "cohn_neural",
-      "cohn_vns"
+      "cohn_vns",
+      "pagkratidou_comics_meta"
     ],
     "cognition": [
       "cohn_book",
@@ -1558,6 +1560,105 @@
       "venue": "2026 30th International Conference Information Visualisation (IV), IEEE",
       "link": "https://doi.org/10.23919/ivcps00113.2026.00052",
       "why": "Recent (newly indexed Nov 2026). Positions visual thinking as a method for digital storytelling, learning, and design around complex 'wicked' problems; links visual thinking to narrative communication."
+    },
+    {
+      "id": "pagkratidou_comics_meta",
+      "area": "Data Comics",
+      "kind": "recent",
+      "authors": "Marianna Pagkratidou; Phivos Phylactou; Marietta Papadatou-Pastou; Gavin Duffy; Neil Cohn",
+      "year": 2026,
+      "title": "Learning from comics versus non-comics material in education: Systematic review and meta-analysis",
+      "venue": "MetaArXiv (OSF Preprints)",
+      "link": "https://doi.org/10.31222/osf.io/esw4c",
+      "why": "Recent (Nov 2026 preprint). Cohn and colleagues meta-analyze empirical studies comparing comics with non-comics material for learning; the first quantitative synthesis of the comics-format effect. Related to your data comics work: a baseline for comprehension and recall effects."
+    },
+    {
+      "id": "davis_comic_stories",
+      "area": "Data Comics",
+      "kind": "recent",
+      "authors": "Hilary Davis; Surbhi Jain",
+      "year": 2026,
+      "title": "“No Worries, Mate?”: Co-designing Comic-Based Digital Stories of International Student Lived Experiences",
+      "venue": "Proceedings of the 38th Australasian Conference on Human-Computer Interaction (OzCHI)",
+      "link": "https://doi.org/10.1145/3847401.3847436",
+      "why": "Recent (Nov 2026). HCI co-design study that turns lived experiences into comic-based digital stories; a design-process reference for participatory comics authoring."
+    },
+    {
+      "id": "eather_persuade",
+      "area": "Data Visualization",
+      "kind": "recent",
+      "authors": "Zoe Eather; Antonette Shibani; Martin Tomitsch",
+      "year": 2026,
+      "title": "How Data Visualisation and Storytelling Persuade: Toward an Ethically Informed Persuasive Mechanism Model",
+      "venue": "Proceedings of the 38th Australasian Conference on Human-Computer Interaction (OzCHI)",
+      "link": "https://doi.org/10.1145/3847401.3857187",
+      "why": "Recent (Nov 2026). Proposes a model of the persuasive mechanisms in data visualization and storytelling with an ethics lens; extends visualization rhetoric work."
+    },
+    {
+      "id": "fu_narrative_peaks",
+      "area": "Narrative Theory",
+      "kind": "recent",
+      "authors": "Kexue Fu; Yawen Zhang; Hiu Man Ho; Wenzhe Hu; RAY LC; Qinyuan Lei; Shengdong Zhao",
+      "year": 2026,
+      "title": "Crafting Memorable Science Stories: Harnessing the Power of Narrative Peaks in Online Science Video Narrative Design",
+      "venue": "ACM Transactions on Computer-Human Interaction",
+      "link": "https://doi.org/10.1145/3861332",
+      "why": "Recent (Nov 2026). Builds a design space of linguistic and structural strategies for narrative peaks in science videos and tests them for engagement and memory; a narrative-structure-to-recall mechanism that could carry over to sequential data stories."
+    },
+    {
+      "id": "montalva_dvl",
+      "area": "Visualization Literacy",
+      "kind": "recent",
+      "authors": "Ignacio Montalvá; Virgilio Pérez; Jose M. Pavia",
+      "year": 2026,
+      "title": "Data Visualization Literacy as an analytical capacity in the public sector: Latent structure and response processes under time constraints",
+      "venue": "Digital Government: Research and Practice",
+      "link": "https://doi.org/10.1145/3856826",
+      "why": "Recent (Nov 2026). Examines Mini-VLAT structure among public-sector staff and separates answering in time from answering correctly; a measurement caution for timed literacy scores."
+    },
+    {
+      "id": "hiippala_diagrams",
+      "area": "Semiotics",
+      "kind": "recent",
+      "authors": "Tuomo Hiippala",
+      "year": 2026,
+      "title": "Multimodal meaning-making in diagrams and information graphics",
+      "venue": "Handbook of Educational Semiotics, De Gruyter",
+      "link": "https://doi.org/10.1515/9783111389943-013",
+      "why": "Recent (published online Nov 2026; handbook dated 2027). Multimodality-theory account of how diagrams and information graphics make meaning; a direct semiotics-to-visualization bridge."
+    },
+    {
+      "id": "tseng_bateman_comics",
+      "area": "Semiotics",
+      "kind": "recent",
+      "authors": "Chiao-I Tseng; John A. Bateman",
+      "year": 2026,
+      "title": "Multimodal semiotic analyses of transmedia adaptation in comics and graphic novels: The method and analysis of a child’s development in comic drawings",
+      "venue": "Handbook of Educational Semiotics, De Gruyter",
+      "link": "https://doi.org/10.1515/9783111389943-017",
+      "why": "Recent (published online Nov 2026; handbook dated 2027). Bateman-school multimodal method applied to comics and graphic novel adaptation; a semiotic analysis toolkit for comics form."
+    },
+    {
+      "id": "xiao_env_comics",
+      "area": "Semiotics",
+      "kind": "recent",
+      "authors": "Astrid Y. Xiao",
+      "year": 2026,
+      "title": "Where Instruction Meets Graphic Narratives: Environmental Storytelling and Visual Rhetorics in Chinese Children’s Comics",
+      "venue": "Children's Literature in Education",
+      "link": "https://doi.org/10.1007/s10583-026-09743-1",
+      "why": "Recent (Nov 2026). Analyzes how educational content is woven into the visual rhetoric of environmental comics across three eras; connects comics rhetoric to instructional storytelling."
+    },
+    {
+      "id": "corbett_ensemble",
+      "area": "Data Visualization",
+      "kind": "recent",
+      "authors": "Jennifer E. Corbett; Brian W. Anthony",
+      "year": 2026,
+      "title": "The Whole Warps the Parts: Attentional Certainty Modulates Ensemble-Induced Bias in Visualizations",
+      "venue": "arXiv (cs.HC)",
+      "link": "https://arxiv.org/abs/2611.22885",
+      "why": "Recent (Nov 2026 preprint). Perception experiments show whether individual marks are biased toward or away from the ensemble depends on attentional certainty; informs how viewers read single values in dense charts."
     }
   ]
 }
